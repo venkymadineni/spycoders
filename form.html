@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <h2>Student Registration Form</h2>
+
+    <form>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" autocomplete="on" required>
+        <br><br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" autocomplete="on" required>
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="on" minlength="6" maxlength="20" required>
+        <br><br>
+
+        <label>Gender</label>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+        <br><br>
+
+        <label>Skills</label>
+        <input type="checkbox" name="skill" value="html"> HTML
+        <input type="checkbox" name="skill" value="css"> CSS
+        <input type="checkbox" name="skill" value="python"> Python
+        <br><br>
+
+        <label for="course">Course</label>
+        <select id="course" name="course">
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="eee">EEE</option>
+            <option value="mech">Mechanical</option>
+        </select>
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4" cols="30"
+                  placeholder="Enter your address"></textarea>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+
+    </form>
+
+</body>
+</html>
